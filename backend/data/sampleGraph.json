@@ -1,0 +1,26 @@
+{
+  "nodes": [
+    { "id": "Main Gate", "label": "Main Gate", "x": 100, "y": 300 },
+    { "id": "Admin Block", "label": "Admin Block", "x": 300, "y": 100 },
+    { "id": "Library", "label": "Library", "x": 550, "y": 100 },
+    { "id": "Hostel", "label": "Hostel", "x": 100, "y": 550 },
+    { "id": "Canteen", "label": "Canteen", "x": 350, "y": 400 },
+    { "id": "Lab", "label": "Lab", "x": 600, "y": 400 },
+    { "id": "Sports Ground", "label": "Sports Ground", "x": 150, "y": 750 },
+    { "id": "Auditorium", "label": "Auditorium", "x": 600, "y": 700 }
+  ],
+  "edges": [
+    { "source": "Main Gate", "target": "Admin Block", "weight": 3 },
+    { "source": "Main Gate", "target": "Hostel", "weight": 5 },
+    { "source": "Admin Block", "target": "Library", "weight": 2 },
+    { "source": "Admin Block", "target": "Canteen", "weight": 4 },
+    { "source": "Library", "target": "Lab", "weight": 1 },
+    { "source": "Hostel", "target": "Canteen", "weight": 6 },
+    { "source": "Hostel", "target": "Sports Ground", "weight": 7 },
+    { "source": "Canteen", "target": "Lab", "weight": 3 },
+    { "source": "Lab", "target": "Auditorium", "weight": 2 },
+    { "source": "Sports Ground", "target": "Auditorium", "weight": 4 },
+    { "source": "Main Gate", "target": "Canteen", "weight": 8 },
+    { "source": "Library", "target": "Canteen", "weight": 5 }
+  ]
+}
